@@ -1,0 +1,177 @@
+{
+    "work": [
+        {
+            "id": 1,
+            "position": "Senior Business Operation Specialist - CS Payments",
+            "company": "Klarna Bank AB",
+            "employment-type": "Full-time",
+            "duration": "Nov 2021 - Sept 2022",
+            "location": "Stockholm"
+        },
+        {
+            "id": 2,
+            "position": "Business Operation Agent - SC&R - Financial Operations",
+            "company": "Klarna Bank AB",
+            "employment-type": "Full-time",
+            "duration": "May 2021 - Oct 2021",
+            "location": "Stockholm"
+        },
+        {
+            "id": 3,
+            "position": "Senior Service Delivery Specialist/Key User - CS Payments",
+            "company": "Klarna Bank AB",
+            "employment-type": "Full-time",
+            "duration": "Feb 2020 - Apr 2021",
+            "location": "Stockholm"
+        },
+        {
+            "id": 4,
+            "position": "Junior Service Delivery Agent - CS Payments",
+            "company": "Klarna Bank AB",
+            "employment-type": "Full-time",
+            "duration": "Jan 2019 - Jan 2020",
+            "location": "Stockholm"
+        },
+        {
+            "id": 5,
+            "position": "Junior Salesman",
+            "company": "Royal Capi-Lux",
+            "employment-type": "Part-time",
+            "duration": "Nov 2017 - Sept 2018",
+            "location": "Stockholm International Airport"
+        }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "degree": "Fullstackutvecklare JavaScript",
+            "school": "Chas Academy",
+            "education-type": "Full-time",
+            "duration": "Sept 2024 - Ongoing",
+            "location": "Stockholm, Sweden"
+        },
+        {
+            "id": 2,
+            "degree": "Programmering 1",
+            "school": "Komvux",
+            "education-type": "Part-time",
+            "duration": "Apr 2024 - Jun 2024",
+            "location": "Stockholm, Sweden"
+        },
+        {
+            "id": 3,
+            "degree": "Engelska 6",
+            "school": "Komvux",
+            "education-type": "Part-time",
+            "duration": "Feb 2024 - Apr 2024",
+            "location": "Stockholm, Sweden"
+        },
+        {
+            "id": 4,
+            "degree": "Diploma in Full Stack Software Development (eCommerce)",
+            "school": "Code Institute",
+            "education-type": "Full-time",
+            "duration": "Sept 2022 - Aug 2023",
+            "location": "Dublin, Ireland"
+        },
+        {
+            "id": 5,
+            "degree": "B.A. in Croatian and Russian (2.5 years completed)",
+            "school": "University of Pécs",
+            "education-type": "Full-time",
+            "duration": "Sept 2010 - Feb 2013",
+            "location": "Pécs, Hungary"
+        },
+        {
+            "id": 6,
+            "degree": "High School Diploma",
+            "school": "Miroslav Krleza High School",
+            "education-type": "Full-time",
+            "duration": "Sept 2006 - Jun 2010",
+            "location": "Pécs, Hungary"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Diploma in Full Stack Software Development",
+            "issued_by": "Code Institute (validated by University of West of Scotland)",
+            "date": "Aug 2023"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "image": "./assets/images/project_img/whats-the-tea.png",
+            "name": "What's the Tea?",
+            "description": "Front-end web application for an LGBTQ+ organisation in Stockholm aimed at spreading positivity, care, and love.",
+            "technologies": "HTML, CSS",
+            "github": "https://github.com/Balkaneros91/whatsss-the-tea",
+            "live_demo": "https://balkaneros91.github.io/whatsss-the-tea/"
+        },
+        {
+            "id": 2,
+            "name": "Roll the Dice",
+            "image": "./assets/images/project_img/roll-the-dice.png",
+            "description": "Front-end web application for a dice game, a fun and easy game for kids and adults.",
+            "technologies": "HTML, CSS, JavaScript",
+            "github": "https://github.com/Balkaneros91/roll-the-dice",
+            "live_demo": "https://balkaneros91.github.io/roll-the-dice/"
+        },
+        {
+            "id": 3,
+            "name": "Hangman",
+            "image": "./assets/images/project_img/hangman-game.png",
+            "description": "Command-line application for a hangman game where the player attempts to build a missing word by guessing one letter at a time.",
+            "technologies": "Python",
+            "github": "https://github.com/Balkaneros91/Hangman_game",
+            "live_demo": "https://hangman-saveman.herokuapp.com/"
+        },
+        {
+            "id": 4,
+            "name": "Cubaneros",
+            "image": "./assets/images/project_img/cubaneros-restaurant.png",
+            "description": "Full-Stack Web application for a restaurant offering traditional rustic Cuban cuisine.",
+            "technologies": "HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Django, MVC framework, PostgreSQL, Cloudinary",
+            "github": "https://github.com/Balkaneros91/Cubaneros-pp4",
+            "live_demo": "https://cubaneros-pp4.herokuapp.com/"
+        },
+        {
+            "id": 5,
+            "name": "Lavender Haven",
+            "image": "./assets/images/project_img/lavender-haven.png",
+            "description": "B2C/B2B eCommerce application for a small lavender business.",
+            "technologies": "HTML, CSS, Bootstrap, JavaScript, jQuery, Python, Django, MVC framework, PostgreSQL, Stripe API, AWS",
+            "github": "https://github.com/Balkaneros91/Lavender-Haven-PP5",
+            "live_demo": "https://lavender-haven-pp5-39266b62efea.herokuapp.com/"
+        },
+        {
+            "id": 6,
+            "name": "Hackoween",
+            "image": "./assets/images/project_img/hackoween-hackathon.jpg",
+            "description": "Hackathon - Code Institute's PhantomForge: A Halloween Hackathon.",
+            "technologies": "HTML, CSS, JavaScript.",
+            "github": "https://github.com/e-kai00/hackoween",
+            "live_demo": "https://e-kai00.github.io/hackoween/"
+        }
+    ],
+    "skills": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Python",
+        "Django",
+        "Bootstrap",
+        "Flask",
+        "jQuery",
+        "Git",
+        "Github",
+        "PostgreSQL",
+        "PGAdmin",
+        "Heroku",
+        "AWS S3",
+        "Cloudinary",
+        "Agile Methodology",
+        "JIRA",
+        "Salesforce"
+    ]
+}

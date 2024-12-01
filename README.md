@@ -1,76 +1,173 @@
-# Instruktioner
+# u02- Individuell uppgift - Egen portfoliosida (HTML/CSS/JS)
 
-Denna uppgift går ut på att du bygga vidare uppgift u01 - Portfoliosida utifrån designskiss med Javascript. Du är nu fri att ändra till egen design / layout, samt eget innehåll. Det är dock viktigt att du behåller en sektion för CV ("About me") och en sektion med projekt ("Projects") eftersom du ska vidareutveckla sidan med Javascript på dessa sektioner. 
-
-## Vad du ska göra
-
-Du ska bygga vidare på  u01 - Portfoliosida utifrån designskiss med Javascript. och se till att du följer följande kravställningar: 
-
-### CV i en fil:
-Dina egna utbildningar och tidigare arbetsplatser ska nu ersätta "About me"-sidan. Ta med så mycket som möjligt att ditt "riktiga CV", men iallafall minst tre poster av varje.
-Vilka utbildningar du läst och vilka tidigare arbeten du haft ska ligga i en separat fil i JSON-format. Denna JSON-fil ska läsas och och generera ditt CV på den tidigare motsvarigheten av "About me" sidan.
-
-
-### Interaktiva scripts:
-Din CV-sida ska innehålla minst två interaktiva JavaScript. Exempel kan vara en modal, slideshow, scroll-effekt, dölja/visa element, o.s.v
-
-### Portfolio:
- Du publicerar minst två uppgifter / projekt från tidigare eller nuvarande studier / arbete inom HTML /CSS
-
-### 👉  VG-krav
-
-Din portfolio ska utökas så att den hämtar in publika projekt som finns i din egen Github via API. Den ska visa dessa projekt i din portfolio med namn och beskrivning.
-
-Du får gärna ha både dessa projekt och andra som genereras utifrån JSON-data om du känner för det, eller så ersätter du projekten så det bara är dina Github-projekt. Eventuellt kan du behöva komplettera datan från Github API med t.ex bilder ifrån JSON-datan.
-
-När hämtningen av projekten sker ska det finnas information om att projekten håller på att ladda in så att besökaren inte undrar varför sidan först är tom.
+## Innehållsförteckning
+- [Svar på frågorna:](#svar-på-grågor)
+- [u02- Individuell uppgift - Egen portfoliosida (HTML/CSS/JS)](#individuell-uppgift)
+	- [Live Site](#live-site)
+	- [Individual project](#individual-project)
+	- [Technologies Used](#technologies-used)
+    - [Responsiveness](#responsiveness)
+    - [Browser Compatibility](#browser-compatibility)
+    - [Lighthouse](#lighthouse)
+	- [Installation](#installation)
 
 
 
-### Tekniska krav:
-* Validerad med 0 fel på https://validator.w3.org
-* Inga errors i Console
+## Svar på frågor 
+- Du svarar på dessa frågor (max 800 ord):
 
-### Sammantfattning av projekt + teoretiska frågor
+### 1. Vad kan man utveckla m.h.a av Javascript inom frontend?
 
-1. Du sammanfattar ditt projekt i README.md och reflekterar kring styrkor och ev brister. Max 500 ord.
-2. Du svarar på dessa frågor (max 800 ord):
+Javascript är en en av dem viktigaste programmerings språk inom den moderna webutvecklingen och är en kärnteknik inom frontendutveckling som avnänds för att skapa interaktiva och dynamiska webbapplikationer. Några exemplar på detta:
 
-Vad kan man utveckla m.h.a av Javascript inom frontend?
-Vad är JSON och hur används det inom frontend?
-Vad är HTTP och varför bör man som frontendutvecklare ha kunskap om det och dess protokoll?
+- Interaktiva webbappar som är dynamiska och användarvänliga. Exempel på det är hamburgar menyer som expanderas med en knapp, direkta formulär valideringar eller automatiserade bildgallerier.
 
+- SPA som står för Single Page Applications skapade med olika ramverk som t.ex: React, Vue, Angular. Webbsidor som laddas på en enda sida och navigeringen i mellan olika "sidor" sker utan att sidan laddas om, som är ett stor plus för att förbättra användarupplevelse.
 
-## Kriterier för bedömning
+- Olika övergångar och animeringar. T.ex: rörelse av elementer, effekter och övergångar som förbättrar webbsidornas design.
 
+- Realtidsapplikationer som kräver realtidsuppdateringar som live-notifikationer eller chatt tjänster. WebSockets är en teknologi som används för sådana realtidsuppdateringar.
 
-Icke Godkänd (IG), Godkänd (G) eller Väl Godkänd (VG)
+- API Interaktion som möjliggör data hämtning och hantering från externa tjänster genom API-er. Detta spelar stor roll när det gäller dynamisk hantering av data som t.ex: väderappar eller sociala medier.
 
-### Godkänd (G)
-Din portfolio-sida uppfyller alla krav enligt kravspecifikationen.
-Du visar att du kan utan allvarliga brister eller missar utveckla denna portfoliosida enligt kraven
-Du sammanfattar ditt projekt samt ger ett översiktligt och korrekt svar på frågorna
+- Spelutveckling, progressiva webbappar (PWA), osv... 
 
 
-### Väl Godkänd (VG)
+#### 2. Vad är JSON och hur används det inom frontend?
 
-Din portfolio-sida uppfyller alla krav enligt kravspecifikationen samt VG-kraven
-Du uppvisar en mer avancerad förståelse för Git genom att jobba med en developer-branch som du sedan mergar i main
-Du visar att du kan utan brister, eller bara i sådan omfattning att de knappt märks eller påverkar slutresultatet
+JSON står för JavaScript Object Notation. Den är en enkel dataformat som är textbaserat och är lika Javascript-objekt. Den används för data representation och utbyte. Den är lätt använd inom frontendutveckling pga sin likhet till JS objekt.
 
+- den är ett standardformat som används inom datautbyte mellan klient(frontend-app) och server via HTTP. På det sättet en webbsida kan hämta väderdata, produktinformation eller användarprofiler från en server och presentera detta på klient sidan. I så fall frontend fetchar data från externa API's som OpenWeatherMap eller Google Maps och levererar den oftast i JSON-format.
 
-### Börja uppgift / Din inlämning
-* Du börjar och lämnar in din uppgift genom Github Classroom på denna länk.
-* Återkoppling ges i Canvas
+- den används också för att lagra data lokalt (localStorage eller SessionStorage).
 
 
+#### 3. Vad är HTTP och varför bör man som frontendutvecklare ha kunskap om det och dess protokoll?
+
+HTTP står för Hypertext Transfer Protocol och är en kommunikationsprotokoll som används för dataöverföring mellan klient(t.ex: webbläsare) och servrar.
+
+- Jobba med frontend ofta betyder att man hämtar data från servrar och skickar formulärdata till backend. Utan att förstå HTTP-metoder som GET, POST, PUT och DELETE gör det nästan omöjligt om man vill interagera korrekt med API:er.
+
+- HTTP-statuskoder och dess förståelse spelar en  jätteviktig roll inom felsökning och förbättring av applikationers funktionalitet. Exempelvis 200 OK, 404 Not Found, osv...
+
+- Säkerhetshantering: Relaterade koncept som CORS (Cross-Origin Resource) och HTTPS (den säkra versionen av HTTP) och dess förståelse hjälper för skydda data och följa säkerhetsstandarder.
+
+- Prestanda optimering: förståelse om HTTP/2 och caching och hur dessa fungerar är viktiga för att optimera webbapplikationernas laddningstid.
+
+- Sessionshantering och cookies: HTTP används för sessionsdata och för att hantera autentisering, vilket spelar avgörande roll när det gäller bygga användarvänliga och säkra appar.
+
+[Back to content list](<#innehållsförteckning>)
 
 
+# Online Resume - ACA 
+
+## Live Site
+
+The live deployed application can be found deployed on [Github Pages]([https://](https://sandra-chas-academy.github.io/u02-individuell-uppgift-egen-portfoliosida-Balkaneros91/)).
+
+The link to my Github repository's [Github Repo]([https://](https://github.com/sandra-chas-academy/u02-individuell-uppgift-egen-portfoliosida-Balkaneros91)).
 
 
+## Individual project
+
+![amiresponsive](assets/images/README/amiresponsive.png)
+
+Online resume project is a built on the idea of our first project for this course, the u01-individual project. It is built with HTML, CSS and I am showcasing here my latest Javascript skills. This project in compare to the first one is a single pager, which means that the future visitors has an easy overview over my online CV and the links added to every each <*h2*> and <*a*> links are connected by "href" and smooth scrool has been added to the <*html*> tag for better UX. For the "education", "work" and "projects" sections the data is fetched by using javascript from the separate JSON file. And the small size screens gets a burger menu which has been updated with addEventListener in compare to the first project in which the menu burger has been created by using the plain HTML and CSS. The resume has the "contact" section which leads to a button and when clicked modal with a contact form will be presented to the user. Since the website is an online CV I though adding the option for downloading the PDF format of it would be very cool, so I added that to the "contact" section.
+
+[Back to content list](<#innehållsförteckning>)
 
 
+## Technologies Used
+
+### Languages Used
+
+<ul>
+<li>HTML/CSS</li>
+<li>JavaScript</li>
+</ul>
+
+### Frameworks, Libraries & Programs Used
+
+<ul>
+<li>Github</li>
+<li>Gitpod</li>
+<li>emailJS</li>
+<li>favicon.io</li>
+</ul>
+
+<hr>
+
+### Responsiveness
+
+I used both of these to check the responsivness across different screen sizes.
+
+- [Am I Responsive?](http://ami.responsivedesign.is/#) 
+
+### Browser Compatibility
+
+| Browser       | Pass/Fail |
+| ------------- | --------- |
+| Google Chrome | Pass      |
+| Safari        | Pass      |
+| Opera         | Pass      |
+| Firefox       | Pass      |
+
+<br>
+
+[Back to content list](<#innehållsförteckning>)
+
+<br>
 
 
+## Lighthouse
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to check the quality of website pages accross mobile and desktop view. 
 
-# 
+### Lighthouse Mobile Views
+
+<details>
+<summary>Click here to see the lighthouse for mobile views:</summary>
+
+![Lighthouse](assets/images/README/lighthouse_mobile.png)
+
+</details>
+
+### Lighthouse Desktop Views
+
+<details>
+<summary>Click here to see the lighthouse for desktop views:</summary>
+
+![Lighthouse](assets/images/README/lighthouse_desktop.png)
+
+</details> <br>
+
+### W3C HTML Validator
+- [W3C Markup Validation Serice](https://validator.w3.org/) was used to validate HTML code.
+![W3C HTML Validator](assets/images/README/validator.w3.png) <br>
+
+### JIGSAW W3C CSS Validator
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate CSS code.
+![W3C CSS Validator- JIGSAW](assets/images/README/css_validation.png) <br>
+
+### JShint
+- [JShint Validator](https://jshint.com/) was used to validate JS code.
+
+<br>
+
+[Back to content list](<#innehållsförteckning>)
+
+<br>
+
+### Chrome DevTools
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+    played a big role in projects development. I used it for testing, debugging. Further more for exploring around and helping myself to fix HTML and CSS difficulties with it. It help me a lot with setting the responsiveness accross different screen sizes.
+
+
+## Installation
+1. Klona projektet från GitHub:
+   ```bash
+   git clone https://github.com/username/portfolio-project.git
+
+[Back to content list](<#innehållsförteckning>)
+
+-----
+Happy coder :)
