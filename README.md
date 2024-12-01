@@ -63,9 +63,9 @@ HTTP står för Hypertext Transfer Protocol och är en kommunikationsprotokoll s
 
 ## Live Site
 
-The live deployed application can be found deployed on [Github](https://).
+The live deployed application can be found deployed on [Github Pages]([https://](https://sandra-chas-academy.github.io/u02-individuell-uppgift-egen-portfoliosida-Balkaneros91/)).
 
-The link to my Github repository's [Github Repo](https://).
+The link to my Github repository's [Github Repo]([https://](https://github.com/sandra-chas-academy/u02-individuell-uppgift-egen-portfoliosida-Balkaneros91)).
 
 
 ## Individual project
