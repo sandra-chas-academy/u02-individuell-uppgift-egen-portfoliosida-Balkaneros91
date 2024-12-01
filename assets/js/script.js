@@ -146,4 +146,30 @@ document.addEventListener("DOMContentLoaded", function () {
   close.addEventListener("click", () => {
     formModal.style.display = "none";
   });
+
+  // SUBMIT THE CONTACT FORM / SENDING EMAIL
+  emailjs.init("CUTjA1ptYGkoIJ1On");
+
+  const contactForm = document.getElementById("contact-form");
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault(); // Prevent the default form submission
+
+    // Define your EmailJS service and template IDs
+    const serviceID = "resume_1950";
+    const templateID = "template_resume";
+
+    // Use emailjs.sendForm
+    emailjs
+      .sendForm(serviceID, templateID, contactForm)
+      .then(() => {
+        alert(`Your message was successful!`);
+        contactForm.reset(); // Reset form
+      })
+      .catch((error) => {
+        alert(`Message failed. Please try again.`);
+        console.log(`EmailJS error: ${error}`);
+      });
+  });
+
+  emailjs.sendForm();
 });
