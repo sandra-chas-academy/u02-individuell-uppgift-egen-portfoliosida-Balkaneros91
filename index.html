@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="I built this project for learning purpose and will be developing it further for future career plans.">
+    <meta name="author" content="Online Resume - ACA">
+
+    <!-- OpenGraph meta data -->
+    <meta property="og:title" content="Online Resume - ACA">
+    <meta property="og:description"
+        content="Online project portfolio resume built for learning purpose and will be used for further coding improvments tests and for future career plans.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://">
+    <meta property="og:image" content="https://balkaneros91.github.io/u02-Individuell/assets/images/og_img.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="An OpenGraph image for my resume project.">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.8/dist/axios.min.js"></script>
+    <script src="./assets/js/index.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <title>Project resume - Online Resume</title>
+</head>
+
+<body>
+    <div id="grid-container">
+        <!-- HEADER CONTENT -->
+        <header id="resume-head">
+
+            <img class="border" src="./assets/images/profile_picture.jpeg" alt="My resume picture.">
+            <h1 class="my-name">
+                <a class="logo" href="#">&#123;&lt;Antonio-Claudio Andelic&gt;&#125;
+                </a>
+            </h1>
+
+            <!-- Burger Menu -->
+            <label id="menu">
+                <span class="menu1"></span>
+                <span class="menu2"></span>
+                <span class="menu3"></span>
+                <strong class="menu-text">Menu</strong>
+            </label>
+
+            <nav class="resume-navigation">
+                <!-- UL for Mobile -->
+                <ul id="mobile">
+                    <li><a href="#about"
+                            aria-label="This link takes you to the about section of my resume page">About</a></li>
+                    <li><a href="#education"
+                            aria-label="This link takes you to the education section of my resume page">Education</a>
+                    </li>
+                    <li><a href="#work" aria-label="This link takes you to the work section of my resume page">Work</a>
+                    </li>
+                    <li><a href="#technologies"
+                            aria-label="This link takes you to the technologies section of my resume page">Technologies</a>
+                    </li>
+                    <li><a href="#projects"
+                            aria-label="This link takes you to the projects section of my resume page">Projects</a></li>
+                    <li><a href="#contact"
+                            aria-label="This link takes you to the contacts section of my resume page">Contact</a></li>
+                </ul>
+
+                <!-- UL for Desktop -->
+                <ul id="desktop">
+                    <li><a href="#about"
+                            aria-label="This link takes you to the about section of my resume page">About</a></li>
+                    <li><a href="#education"
+                            aria-label="This link takes you to the education section of my resume page">Education</a>
+                    </li>
+                    <li><a href="#work" aria-label="This link takes you to the work section of my resume page">Work</a>
+                    </li>
+                    <li><a href="#technologies"
+                            aria-label="This link takes you to the technologies section of my resume page">Technologies</a>
+                    </li>
+                    <li><a href="#projects"
+                            aria-label="This link takes you to the projects section of my resume page">Projects</a></li>
+                    <li><a href="#contact"
+                            aria-label="This link takes you to the contacts section of my resume page">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main id="resume-main">
+
+
+            <section id="about">
+                <a href="#resume-head" aria-label="The link takes you back to the navigation on the top of the page.">
+                    <h2>About <img src="./assets/images/svg/link.svg" alt="Link SVG image"></h2>
+                    <!-- <img src="./assets/images/svg/link.svg" alt="Link SVG image"> -->
+                </a>
+                <p>Själv som junior mjukvaruutvecklare, nyutexaminerad inom Full-stack Software Development från Code
+                    Institute, erbjuder jag kunskaper i HTML, CSS, JavaScript och Python. Med en kombination av teknisk
+                    kompetens och bred arbetslivserfarenhet inom bank (3,5 år) och hotellbranschen (8 år) bidrar jag med
+                    en stark samarbetsförmåga, god kommunikation och en lösningsfokuserad inställning. Min bakgrund ger
+                    mig en unik förståelse för kundfokus och effektiv problemlösning, och jag är fast besluten att ta
+                    steget in i IT-branschen. Jag söker nu en heltidsroll i ett engagerat utvecklingsteam, gärna som
+                    lärling eller i en junior tjänst, där jag kan utvecklas vidare och bidra till spännande och
+                    innovativa projekt.
+                </p>
+            </section>
+
+            <section id="education">
+                <a href="#resume-head" aria-label="The link takes you back to the navigation on the top of the page.">
+                    <h2>Education <img src="./assets/images/svg/link.svg" alt="Link SVG image"></h2>
+                </a>
+            </section>
+
+            <section id="work">
+                <a href="#resume-head" aria-label="The link takes you back to the navigation on the top of the page.">
+                    <h2>Work <img src="./assets/images/svg/link.svg" alt="Link SVG image"></h2>
+                </a>
+            </section>
+
+            <section id="projects">
+                <a href="#resume-head" aria-label="The link takes you back to the navigation on the top of the page.">
+                    <h2>Projects <img src="./assets/images/svg/link.svg" alt="Link SVG image"></h2>
+                </a>
+            </section>
+
+            <section id="technologies">
+                <a href="#resume-head" aria-label="The link takes you back to the navigation on the top of the page.">
+                    <h2>Technologies <img src="./assets/images/svg/link.svg" alt="Link SVG image"></h2>
+                </a>
+
+                <h3>Tech Stack</h3>
+                <p>Technologies I've been working with recently: </p>
+
+                <div class="stack-images">
+                    <img src="./assets/images/tech-stack/html.svg" alt="Hyper Text Markup Language">
+                    <img src="./assets/images/tech-stack/css.svg" alt="Cascading Style Sheet">
+                    <img src="./assets/images/tech-stack/python.svg" alt="Python">
+                    <img src="./assets/images/tech-stack/django.svg" alt="Django">
+                    <img src="./assets/images/tech-stack/flask.svg" alt="Flask">
+                    <img src="./assets/images/tech-stack/javascript.svg" alt="Javascript">
+                    <img src="./assets/images/tech-stack/jquery.svg" alt="jQuery">
+                    <img src="./assets/images/tech-stack/bootstrap.svg" alt="Bootstrap">
+                </div>
+                <h3>Tools</h3>
+
+                <div class="tool-images">
+                    <img src="./assets/images/tools/visual-studio-code.svg" alt="Visual Studio Code">
+                    <img src="./assets/images/tools/git.svg" alt="Git">
+                    <img src="./assets/images/tools/github.svg" alt="Github">
+                    <img src="./assets/images/tools/aws.svg" alt="Amazon Web Services">
+                    <img src="./assets/images/tools/cloudinary.svg" alt="Cloudinary">
+                    <img src="./assets/images/tools/heroku.svg" alt="Heroku">
+                    <img src="./assets/images/tools/jira.svg" alt="Jira">
+                    <img src="./assets/images/tools/postgresql.svg" alt="PostgreSQL">
+                    <img src="./assets/images/tools/salesforce.svg" alt="Salesforce">
+                    <img src="./assets/images/tools/figma.svg" alt="Figma">
+                    <img src="./assets/images/tools/npm.svg" alt="npm">
+                    <img src="./assets/images/tools/postman.svg" alt="Postman">
+                </div>
+            </section>
+
+            <div class="download-div">
+                <a href="#resume-head" aria-label="The link takes you back to the navigation on the top of the page.">
+                    <h2>Contact <img src="./assets/images/svg/link.svg" alt="Link SVG image"></h2>
+                </a>
+
+                <a href="assets/cv/cv_swe_version.pdf" target="_blank" class="cv-pdf"
+                    aria-label="This is the link to download my resume"><img class="download"
+                        src="./assets/images/svg/download.svg" alt="Download SVG image"> Download CV</a>
+            </div>
+            <div id="contact">
+
+
+                <p class="contact">In case you have a question email me or chat me on WhatsApp</p>
+                <p class="contact-details">
+                    <span class="email">andelic.antonio.claudio91@gmail.com</span> or
+                    <span class="number">+46 73 647 6613</span>
+                </p>
+
+                <button type="button" id="formBtn">Contact Form</button>
+
+                <!-- Modal for Contact Form -->
+                <div id="formModal" class="modal">
+                    <div class="form-content">
+                        <span class="close">&times;</span>
+                        <!-- <form id="contact-form" method="post" action="mailto:andelic.antonio.claudio@gmail.com" enctype="text/plain" target="_blank"> -->
+                        <form id="contact-form">
+                            <h2>Are you interested to collaborate, please fill in the contact form!</h2>
+
+                            <label for="your-name">First name</label>
+                            <input class="txt-input" type="text" name="fname" id="your-name" placeholder="Your name"
+                                required>
+
+                            <label for="e-mail">E-mail</label>
+                            <input class="txt-input" type="email" name="email" id="e-mail"
+                                placeholder="example@email.com" required>
+
+                            <label for="description">Description</label>
+                            <textarea class="txt-input" name="description" id="description"
+                                placeholder="Leave a message ..." required></textarea>
+
+                            <input id="submit-btn" type="submit" value="Submit!">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer id="footer">
+
+            <ul id="social-media">
+
+                <!-- Social Media -->
+                <li class="resume-socials"><a href="https://facebook.com" target="_blank" rel="noopener"
+                        aria-label="Go to my Facebook page (opens in a new tab)"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+
+                <li class="resume-socials"><a href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="Go to my Instagram page (opens in a new tab)"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+
+                <li class="resume-socials"><a href="https://x.com/" target="_blank" rel="noopener"
+                        aria-label="Go to my X page (opens in a new tab)"><i
+                            class="fa-brands fa-square-x-twitter"></i></a></li>
+
+                <li class="resume-socials"><a href="https://www.linkedin.com/in/antonio-claudio-andelic/"
+                        target="_blank" rel="noopener" aria-label="Go to my LinkedIn page (opens in a new tab)"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+
+                <li class="resume-socials"><a href="https://github.com/Balkaneros91" target="_blank" rel="noopener"
+                        aria-label="Go to my GitHub page (opens in a new tab)"><i
+                            class="fa-brands fa-square-github"></i></a></li>
+
+            </ul>
+
+            <div id="copyright">
+                <p class="created-by">Copyright &copy; | <strong>Antonio-Claudio Andelic</strong> | 2022 </p>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/58d92d93b9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
